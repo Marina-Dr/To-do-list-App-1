@@ -7,6 +7,8 @@ function newItem() {
         alert ("You must write something!");
     } else {
         $('#list').append(li);
+        $('input').val('');
+          $('input').focus();
     }
 
     function crossOut() {
@@ -70,6 +72,7 @@ function newItem(){
  	}
  // 4. Reordering the items:
    $('#list').sortable();
+
 
 }
 */
